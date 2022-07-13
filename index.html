@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Document</title>
 </head>
@@ -18,12 +18,12 @@
         <div class="entry">
             <div class="e-name">
                 <h3>ninja</h3>
-                <p>noun</p>
+                <p><span>noun</span></p>
                 <p>Plural: <span>ninjas</span></p>
-                <button type="button" name="e-like" value="null">Likes</button>
+                <button type="button" name="e-like" value="null" onclick="addLike(this)">Click to like this post!</button>
             </div>
             <p class="e-def">
-                A practitioner skilled in the <a href="#">Japanese</a>" art of <a href="#">ninjutsu</a>"
+                A practitioner skilled in the <a href="https://en.wikipedia.org/wiki/Japanese" target="_blank">Japanese</a> art of <a href="https://en.wikipedia.org/wiki/Ninjutsu"target="_blank">ninjutsu</a>
             </p>
         </div>
     </div>

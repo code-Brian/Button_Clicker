@@ -5,3 +5,16 @@ function changeLogStatus(element) {
         element.innerText = "Login";
     }
 }
+
+let likes = 0;
+
+function addLike(element) {
+    likes++;
+    if (likes == 1) {
+        alert("Ninja was liked!");
+        element.innerText = `${likes} likes`;
+    } else {
+        element.innerText = `${likes} likes`;
+    }
+    return likes;
+}
