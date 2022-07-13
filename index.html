@@ -14,18 +14,38 @@
         <input type="text" placeholder="Search">
         <button type="button" name="log" value="login" onclick="changeLogStatus(this)">Login</button>
     </div>
-    <div class="content-container">
-        <div class="entry">
-            <div class="e-name">
-                <h3>ninja</h3>
-                <p><span>noun</span></p>
-                <p>Plural: <span>ninjas</span></p>
-                <button type="button" name="e-like" value="null" onclick="addLike(this)">Click to like this post!</button>
+    <div class="column-container">
+        <div class="column-left-container">
+            <div class="entry">
+                <div class="e-name">
+                    <h3>ninja</h3>
+                    <p><span>noun</span></p>
+                    <p>Plural: <span>ninjas</span></p>
+                    <button type="button" name="e-like" value="null" onclick="addLike(this)">Click to like this post!</button>
+                </div>
+                <p class="e-def">
+                    A practitioner skilled in the <a href="https://en.wikipedia.org/wiki/Japanese" target="_blank">Japanese</a> art of <a href="https://en.wikipedia.org/wiki/Ninjutsu"target="_blank">ninjutsu</a>
+                </p>
             </div>
-            <p class="e-def">
-                A practitioner skilled in the <a href="https://en.wikipedia.org/wiki/Japanese" target="_blank">Japanese</a> art of <a href="https://en.wikipedia.org/wiki/Ninjutsu"target="_blank">ninjutsu</a>
-            </p>
+            <div class="entry">
+                <div class="e-name">
+                    <h3>ninja</h3>
+                    <p><span>noun</span></p>
+                    <p>Plural: <span>ninjas</span></p>
+                    <button type="button" name="e-like" value="null" onclick="addLike(this)">Click to like this post!</button>
+                </div>
+                <p class="e-def">
+                    A practitioner skilled in the <a href="https://en.wikipedia.org/wiki/Japanese" target="_blank">Japanese</a> art of <a href="https://en.wikipedia.org/wiki/Ninjutsu"target="_blank">ninjutsu</a>
+                </p>
+            </div>
+        </div>
+        <div class="column-right-container">
+            <div class="add-def">
+                <p>Dojonary is defined by <span>YOU</span></p>
+                <button type="button" name="add-def" onclick="addDef(this)">Add Definition</button>
+            </div>
         </div>
     </div>
+    
 </body>
 </html>

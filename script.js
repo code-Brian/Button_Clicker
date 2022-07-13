@@ -18,3 +18,7 @@ function addLike(element) {
     }
     return likes;
 }
+
+function addDef(element) {
+    element.remove();
+}

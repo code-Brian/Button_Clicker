@@ -26,6 +26,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     height: 100px;
+    width: 60vw;
     background-color: #cccccc;
 }
 
@@ -37,6 +38,7 @@ body {
 .nav input {
     height: 40px;
     width: 400px;
+    padding-left: 15px;
 }
 
 .nav button {
@@ -56,9 +58,19 @@ body {
 }
 
 /* Container styling for definition cards/page content */
-.content-container {
+.column-container {
     display: flex;
-    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 60vw;
+}
+.column-left-container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.column-right-container {
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 /* Definition card styling here */
@@ -66,7 +78,7 @@ body {
     display: flex;
     align-items: center;
     border: 3px solid black;
-    margin: 15px;
+    margin-top: 15px;
     padding: 15px;
 }
 
@@ -89,13 +101,45 @@ body {
 }
 
 .entry button {
+    background-color: #ffd966;
     font-size: 1rem;
     max-width: 140px;
     font-weight: bold;
     padding: 5px 15px;
+    border: 1px solid black;
     box-shadow: 2px 2px 5px black;
 }
 
 .e-def {
     margin-right: 15px;
+}
+
+.add-def {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 15px;
+}
+
+.add-def p span {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.add-def p {
+    max-width: 145px;  
+}
+
+.add-def button {
+    background-color: #93c47d;
+    font-size: 1rem;
+    max-width: 145px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px black;
 }
